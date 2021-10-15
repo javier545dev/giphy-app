@@ -1,12 +1,13 @@
  import React, { useState } from 'react'
  import AddSearch from './components/AddSearch'
  import GifGrid from './components/GifGrid'
+ import './index.css'
 
  const Giphy = () => {
 
      //const categorias = [ 'Dragon Ball', 'Naruto', 'Bleach']
     // eslint-disable-next-line no-unused-vars
-    const [categories, setCategories] = useState(['Naruto'])
+    const [categories, setCategories] = useState([''])
 
     //const handleAdd = () => {
          //setCategorias ([ ...categorias, "HunterX"])
@@ -14,8 +15,11 @@
     //}
      return ( 
          <>
-            <h2>GiphyBrowser</h2>
-            <hr />
+            <div className='title'>
+                <h2>GiphyBrowser</h2>
+                <hr />
+            </div>
+
             <AddSearch setCategories={setCategories} />
             <ol>
                 { categories.map( category => (
