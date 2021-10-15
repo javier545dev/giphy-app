@@ -19,7 +19,7 @@
                 <h2>GiphyBrowser</h2>
                 <hr />
             </div>
-
+            <div className='content'>
             <AddSearch setCategories={setCategories} />
             <ol>
                 { categories.map( category => (
@@ -30,6 +30,7 @@
                     ))
                 }
             </ol>
+            </div>
          </>
      )
  } 

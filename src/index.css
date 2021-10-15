@@ -9,11 +9,15 @@
  }
 
  input {
-  flex: 0 0 100%;
   color: black;
   font-size: 2rem;
   width: 100%;
  }
+
+ form {
+   display: flex;
+ }
+
  .card-grid {
    display: flex;
    flex-direction: row;
@@ -53,4 +57,8 @@ hr {
   flex: 0 0 100%;
   background-color:aqua;
   height: 3px;
+}
+
+.content {
+  justify-content: center;
 }
