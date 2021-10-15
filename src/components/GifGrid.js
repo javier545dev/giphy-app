@@ -9,7 +9,6 @@ const GifGrid = ({category}) => {
     const { data:images, loading} = useFetchGits( category )
 
     return (
-
         <>
             <h3 className="animate__animated animate__fadeIn">{category}</h3>
 
